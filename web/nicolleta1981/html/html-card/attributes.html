@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <title>HTML attributes</title>
+</head>
+<body>
+<h2>HTML attributes provide additional information about HTML elements.
+<ul>
+  <li>The href attribute of < a > specifies the URL of the page the link goes to</li>
+  <li>The src attribute of < img > specifies the path to the image to be displayed</li>
+  <li>The width and height attributes of < img > provide size information for images</li>
+  <li>The alt attribute of < img > provides an alternate text for an image</li>
+  <li>The style attribute is used to add styles to an element, such as color, font, size, and more</li>
+  <li>The lang attribute of the < html > tag declares the language of the Web page</li>
+  <li>The title attribute defines some extra information about an element</li>
+</ul>
+</h2>
+<h2><b>The href Attribute</b>The < a > tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</h2>
+<p>Ex:<a href="https://ro-info.codetap.academy/">Visit Codetap</a></p>
+<p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. The target attribute specifies where to open the linked document.</p>
+<p><b>The target attribute can have one of the following values:</b></p>
+<ul>
+  <li><b>_self</b>- Default. Opens the document in the same window/tab as it was clicked</li>
+  <li><b>_blank</b>- Opens the document in a new window or tab</li>
+  <li><b>_parent</b>- Opens the document in the parent frame</li>
+  <li><b>_top</b>- Opens the document in the full body of the window</li>
+</ul>
+<p>EX:target=_blank to open link in new window</p>
+<p><a href="https://ro-info.codetap.academy/" target="_blank">Visit Codetap</a></p>
+
+<p><h3>Absolute URLs - a full web address</h3>
+  <p><a href="https://www.google.com/">Google</a></p>
+  
+  <h3>Relative URLs-A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part)</h3>
+  <p><a href="univers.jpg">Image</a></p>
+  <p><a href="basic.html">Basic</a></p></p>
+  <h2><b>The src Attribute</b>The < img > tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</h2>
+  <p>There are two ways to specify the URL in the src attribute:</p>
+<ol>
+  <li>Absolute URL - Links to an external image that is hosted on another website.Notes: External images might be under copyright.</li>
+<li>Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li>
+</ol>
+<h2><b>The width and height Attributes</b>The < img > tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):</h2>
+ <p><img src="univers.jpg" width="500" height="600"></p> 
+ <h2><b>The alt Attribute</b>The required alt attribute for the < img > tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.</h2>
+<p><img src="univers.jpg" alt="Univers"></p>
+<h2><b>The style Attribute</b>The style attribute is used to add styles to an element, such as color, font, size, and more.</h2>
+<p>"< p style="color:red;">This is a red paragraph.</ p >"</p> 
+<h2><b>The lang Attribute</b>You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</h2>
+<p>< html lang="en"></ html></p> 
+<h2><b>The title Attribute</b>The title attribute defines some extra information about an element.
+
+  The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+  
+  Example
+  <p title="I'm a tooltip">This is a paragraph.</p></h2>
+  < p title="I'm a tooltip">This is a paragraph.</ p>
+</body>
+</html
