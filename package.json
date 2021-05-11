@@ -1,14 +1,16 @@
 {
-  "name": "my-cv-v3-starter",
-  "version": "1.0.0",
+  "name": "html-css-javascript-starterclear",
+  "version": "2.0.3",
   "description": "Project for first timers into web development",
   "main": "index.js",
   "scripts": {
-    "start": "node start.js"
+    "start": "node start.js",
+    "c": "git-cz",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codetapacademy/my-cv-v3-starter.git"
+    "url": "git+https://github.com/codetapacademy/html-css-javascript-starterclear.git"
   },
   "keywords": [
     "html",
@@ -19,10 +21,19 @@
   "author": "Marian Zburlea",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codetapacademy/my-cv-v3-starter/issues"
+    "url": "https://github.com/codetapacademy/html-css-javascript-starterclear/issues"
   },
-  "homepage": "https://github.com/codetapacademy/my-cv-v3-starter#readme",
+  "homepage": "https://github.com/codetapacademy/html-css-javascript-starterclear#readme",
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "live-server": "^1.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "standard-version": "^9.1.1"
   }
 }
